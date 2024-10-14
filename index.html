@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Your Recipe</title>
+  </head>
+  <body>
+    <div class="nav">
+      <h1><a href="index.html" class="contact-as">Matlust</a></h1>
+      <ul>
+        <li><a href="index.html" class="contact-as">Logga in</a></li>
+        <li><a href="index.html" class="contact-as">Food nyheter</a></li>
+        <li><a href="aboutAs.html" class="contact-as">Om oss</a></li>
+        <li><a href="contactAs.html" class="contact-as">Kontakta oss</a></li>
+      </ul>
+    </div>
+    <div class="conteiner">
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="tittel">HITTA RECEPT EFTER INGREDIENSER</h2>
+          <blockquote>
+            Det enda jag gillar bättre än att prata om mat är att äta mat<br />
+            <cite>"Någon som är hungrig"</cite>
+          </blockquote>
+
+          <div class="meal-search-box">
+            <input
+              class="serach-control"
+              type="text"
+              placeholder="Ange dina ingredienser"
+              id="search-input" />
+            <button type="submit" class="serach-btn" id="search">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="meal-result">
+          <h2 class="tittel">Din sök resultat</h2>
+          <div id="meal">
+            <!-- result temaplet meal-->
+            <!-- <div class="meal-item">
+              <div class="meal-img">
+                <img src="assets/imges/meal.jpg" alt="meal" />
+              </div>
+              <div class="meal-name">
+                <h3>beef</h3>
+                <a href="#" class="recipe-btn">din recept</a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="meal-detalis">
+          <button class="btn-recipe-close-btn" id="recipe-close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <!--meal contant template-->
+          <div class="meals-detali-content">
+            <!-- <h2 class="recipe-title">meal name here</h2>
+            <p class="recipe-catagory">catagory here</p>
+            <div class="recipe-instruct">
+              <h3>Instructions:</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus doloribus similique, necessitatibus magni, facere,
+                et laudantium atque cum dolores error aliquid dolorum
+                perferendis. Minus earum suscipit quae possimus aperiam!
+                Aliquam!
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Explicabo culpa maxime aliquam, quia vero dignissimos! Numquam
+                  atque assumenda magnam unde?</p>
+              </p>
+            </div>
+            <div class="recip-meal-imge">
+              <img src="assets/imges/meal.jpg" alt="meal" />
+            </div>
+            <div class="recipe-link">
+              <a href="#" target="_blank"> titta Här</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas id="myChart"></canvas>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
